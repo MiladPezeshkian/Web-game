@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GuessMyNumber</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" href="./img/LoneWalKaeR.png" />
+    <script src="https://kit.fontawesome.com/4bbd852672.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="bg-black" >
+    <div>
+      <img
+        src="./img/guess my number.png"
+        alt="logo"
+        class="bg-fixed w-full -z-10 fixed h-full bg-cover bg-no-repeat opacity-45"
+      />
+    </div>
+    <header class="w-full">
+      <section  class="flex lg:justify-between items-center md:p-5 
+      opacity-95 hover:opacity-100 duration-200 shadow gap-8 
+      lg:flex-row flex-col justify-center 
+     ">
+        <figure
+         class="flex lg:justify-center items-center md:gap-14 md:flex-row flex-col md:justify-between gap-5"
+        >
+          <img
+            src="./img/LoneWalKaeR.png"
+            alt=""
+            class="w-32 h-32 border border-solid border-blue-600 rounded-full bg-blue-800 hover:scale-110 hover:transition-all md:float-start"
+          />
+          <h1 class="h1-header my-0 mx-auto">
+            L<span class="text-yellow-200 span1">one</span>W<span
+              class="text-gray-600 span2"
+              >alKe</span
+            >R
+          </h1>
+        </figure>
+          <nav class="md:h-auto h-36 bg-[#182C33] md:bg-inherit md:w-auto w-full  ">
+          <div class="neon__button whitespace-nowrap  flex justify-between gap-4 ">
+        
+            <a href="#" >
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Sign Up
+            </a>
+         
+            <a href="#">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Login
+            </a>
+            <a href="../../New folder (2)/main-page/index.html">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Home
+            </a>
+          </nav>
+          </div>
+      </section>
+    </header>
+    <main class="h-full bg-[#0b2028]  flex flex-col justify-center items-center">  
+        <h2 class="text-center text-[#B1DEEC] lg:text-[60px] md:text[40px] text-[30px] text-nowrap mt-5 -mb-5 " 
+           style="
+       
+          letter-spacing: 8px;
+ 
+           ">Guess My Number!</h2>
+       
+        <form action="" class=" w-full lg:m-5 md:m-4 m-3 flex flex-col justify-center items-center blur-md  form-main">
+                   <h2 class="text-center text-white lg:text-[70px] md:text[70px] text-[30px] lg:mb-5 md:mb-4 mb-3">Enter Your Number From 1-100</h2>
+                  <div class="flex lg:flex-row justify-evenly lg:items-center w-4/5 my-0 mx-auto flex-col items-start border border-red-600 p-5 m-5">
+                    <div class="flex lg:flex-col flex-col-reverse lg:justify-center items-center lg:text-2xl justify-evenly  text-white  w-full">
+                      <label for="" class="text-4xl border border-blue-600 lg:p-5 lg:m-5  md:p-4 md:m-4 p-2 m-2 lg:w-fit w-full hidden-num">?</label>
+                       <label for="" class="md:text-4xl text-[25px] border
+                        border-blue-600 lg:p-5 lg:m-5 
+                         md:p-4 md:m-4 p-2 m-2 whitespace-nowrap
+                           lg:w-fit w-full state">Start Smart Ass !</label>
+                    </div>
+                    <div class="flex flex-col lg:justify-center items-center lg:text-2xl justify-evenly   text-white  w-full">
+                        <label for="" 
+                        class="md:text-4xl text-[25px] border  border-blue-600 lg:p-5 lg:m-5  md:p-4 md:m-4 p-2 m-2 whitespace-nowrap lg:w-fit w-full score">Score : 10</label>
+                         <label for="" class="md:text-4xl text-[25px] border border-blue-600 lg:p-5 lg:m-5  md:p-4 md:m-4 p-2 m-2 whitespace-nowrap lg:w-fit w-full heighest-score">Heighest Score : 0</label>
+                    </div>
+                  </div>
+                  <div class="flex flex-row justify-evenly items-center w-4/5 my-0 mx-auto  border border-red-600 p-5 m-5">
+                    <input 
+                    type="text"
+                    pattern="[0-9]*"
+                    name="" 
+                    id="num"
+                    min='1' 
+                    max='100'
+                    required 
+                    placeholder=""
+                    class="border-blue-400 text-4xl md:w-32 w-28 border-4 hover:outline-none outline-none rounded-[20px] p-[5px] shadow-blue-500 shadow-md text-center input" 
+                    oninput="if (value > 100) value = 100; if (value < 1) value = '';"
+                >
+                  <input type="button" 
+                          value="Check"
+                          id="num"
+                          class="text-white md:text-3xl text-2xl border-4 border-teal-400 rounded-2xl p-5 bg-teal-500 hover:scale-110 transition-all duration-800 check "
+                   >
+                </div>
+        </form>
+
+
+        <div class="neon__button2 mb-5 pb-5">
+          <button type="button" class="btn-start">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  Start Game
+              </button>
+          </div>
+        
+
+            <!-- icon for valume -->
+            <!-- <button type="button" ><i class="fa-solid fa-volume-high"></i></button>
+            <button type="button"><i class="fa-solid fa-volume-xmark"></i></button> -->
+    </main>
+    <footer class="bg-blue-900 text-blue-300 text-[30px] text-center">
+            &copy;LoneWalkeR
+    </footer>
+    <script src="./js.js"></script>
+  </body>
+</html>

@@ -1,0 +1,267 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+  --BG-DARK-COLOR: #303538bc;
+}
+header {
+  background-image: linear-gradient(
+    to right,
+    var(--BG-DARK-COLOR),
+    rgba(75, 72, 72, 0.974),
+    rgba(72, 70, 70, 0.901),
+    var(--BG-DARK-COLOR)
+  );
+}
+.h1-header {
+  font-family: "Hedvig Letters Sans", sans-serif;
+  color: whitesmoke;
+  font-size: 2.5rem;
+  animation-name: h1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes h1 {
+  0% {
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 0px rgb(0, 255, 217));
+    color: black;
+    opacity: 0.5;
+  }
+  50% {
+    transform: scale(1);
+    filter: drop-shadow(5px 5px 10px rgb(0, 255, 217));
+    color: white;
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.1);
+    filter: drop-shadow(0px 0px 0px rgb(0, 255, 217));
+    color: black;
+    opacity: 0.5;
+  }
+}
+.span1 {
+  animation-name: span1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes span1 {
+  0% {
+    color: white;
+    opacity: 0.7;
+  }
+  50% {
+    color: darkgreen;
+    opacity: 1;
+  }
+  100% {
+    color: white;
+    opacity: 0.7;
+  }
+}
+@keyframes span2 {
+  0% {
+    color: white;
+    opacity: 0.7;
+  }
+  50% {
+    color: firebrick;
+    opacity: 1;
+  }
+  100% {
+    color: white;
+    opacity: 0.7;
+  }
+}
+.span2 {
+  animation-name: span2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.neon__button a {
+  position: relative;
+  display: inline-block;
+  padding: 15px 20px;
+  margin: 20px 0;
+  color: #03e9f4;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+  margin: 20px;
+}
+.neon__button a:hover {
+  background: #03e9f4;
+  color: #050801;
+  box-shadow:
+    0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+.neon__button a:nth-child(1) {
+  filter: hue-rotate(270deg);
+}
+.neon__button a:nth-child(2) {
+  filter: hue-rotate(110deg);
+}
+.neon__button a span {
+  position: absolute;
+  display: block;
+}
+.neon__button a span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: animate1 1s linear infinite;
+}
+
+.neon__button a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+.neon__button a span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+.neon__button a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+.white-space {
+  white-space: nowrap;
+}
+.neon__button2 {
+  margin: 0 auto;
+}
+.neon__button2 button {
+  position: relative;
+  display: inline-block;
+  padding: 25px 30px;
+  margin: 0 auto;
+  color: #03e9f4;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+}
+.neon__button2 button:hover {
+  background: #03e9f4;
+  color: #050801;
+  box-shadow:
+    0 0 5px #03e9f4,
+    0 0 25px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 200px #03e9f4;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+.neon__button2 button:nth-child(1) {
+  filter: hue-rotate(270deg);
+}
+.neon__button2 button:nth-child(2) {
+  filter: hue-rotate(110deg);
+}
+.neon__button2 button span {
+  position: absolute;
+  display: block;
+}
+.neon__button2 button span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: animatea 1s linear infinite;
+}
+@keyframes animatea {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+.neon__button2 button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: animateb 1s linear infinite;
+  animation-delay: 0.25s;
+}
+@keyframes animateb {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+.neon__button2 button span:nth-child(3) {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: animatec 1s linear infinite;
+  animation-delay: 0.5s;
+}
+@keyframes animatec {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.neon__button2 button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: animated 1s linear infinite;
+  animation-delay: 0.75s;
+}
+@keyframes animated {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+.game-logo {
+  position: absolute;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%) !important;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%) !important;
+}
